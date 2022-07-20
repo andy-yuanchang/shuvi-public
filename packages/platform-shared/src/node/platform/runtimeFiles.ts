@@ -1,11 +1,11 @@
 import { IPluginContext } from '@shuvi/service';
-import { fileUtils } from '@shuvi/service/lib/project';
+import { fileUtils } from '@shuvi/service/esm/project';
 import {
   setRuntimeConfig,
   setPublicRuntimeConfig
-} from '../../shared/shuvi-singleton-runtimeConfig';
-import { createProjectContext } from '../project/projectContext';
-import { getFilePresets } from '../project/file-presets';
+} from '../../shared/shuvi-singleton-runtimeConfig.js';
+import { createProjectContext } from '../project/projectContext.js';
+import { getFilePresets } from '../project/file-presets/index.js';
 
 /**
  * A creator for `getPresetRuntimeFiles` which helps platforms to build a bunch of runtime files including

@@ -1,4 +1,4 @@
-import { IRuntimeConfig } from '../../shared';
+import { IRuntimeConfig } from '../../shared/index.js';
 
 export interface UserModule {
   app: string | string[];

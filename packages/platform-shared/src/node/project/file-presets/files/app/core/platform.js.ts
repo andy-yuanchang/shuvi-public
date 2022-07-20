@@ -1,6 +1,6 @@
-import { defineFile } from '../../..';
-import { fileUtils } from '@shuvi/service/lib/project';
-import { ProjectContext } from '../../../../projectContext';
+import { defineFile } from '../../../index.js';
+import { fileUtils } from '@shuvi/service/esm/project';
+import { ProjectContext } from '../../../../projectContext.js';
 
 export default (context: ProjectContext) =>
   defineFile({

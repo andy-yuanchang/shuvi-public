@@ -1,6 +1,6 @@
-import { defineFile } from '../../..';
-import { getPublicRuntimeConfig } from '../../../../../../shared/shuvi-singleton-runtimeConfig';
-import { ProjectContext } from '../../../../projectContext';
+import { defineFile } from '../../../index.js';
+import { getPublicRuntimeConfig } from '../../../../../../shared/shuvi-singleton-runtimeConfig.js';
+import { ProjectContext } from '../../../../projectContext.js';
 
 export default (context: ProjectContext) =>
   defineFile({

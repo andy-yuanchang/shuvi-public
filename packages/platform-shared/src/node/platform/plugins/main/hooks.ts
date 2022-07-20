@@ -2,7 +2,7 @@ import {
   createAsyncParallelHook,
   createAsyncSeriesWaterfallHook
 } from '@shuvi/hook';
-import { IRuntimeConfig } from '../../../../shared';
+import { IRuntimeConfig } from '../../../../shared/index.js';
 
 const addEntryCode = createAsyncParallelHook<void, void, string | string[]>();
 const addPolyfill = createAsyncParallelHook<void, void, string | string[]>();

@@ -1,13 +1,13 @@
-import invariant from '@shuvi/utils/lib/invariant';
-import { IRouteMatch, IPageRouteRecord } from '../routerTypes';
+import { invariant } from '@shuvi/utils/lib/invariant.js';
+import { IRouteMatch, IPageRouteRecord } from '../routerTypes.js';
 import {
   Response,
   json as createJson,
   redirect as createRedirect,
   response,
   isResponse
-} from '../response';
-import { Loader, LoaderContextOptions, LoaderDataRecord } from './types';
+} from '../response.js';
+import { Loader, LoaderContextOptions, LoaderDataRecord } from './types.js';
 
 interface Result<T> {
   error?: unknown;

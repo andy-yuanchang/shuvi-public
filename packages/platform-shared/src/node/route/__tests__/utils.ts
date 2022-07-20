@@ -1,5 +1,5 @@
 import { join, sep } from 'path';
-import { RouteException } from '../route';
+import { RouteException } from '../route.js';
 
 const toUnixPath = (filePath: string) => filePath.split(sep).join('/');
 

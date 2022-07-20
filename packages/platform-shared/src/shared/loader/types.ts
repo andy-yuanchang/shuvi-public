@@ -1,6 +1,6 @@
-import { IURLQuery, IURLParams } from '../routerTypes';
-import { IAppContext, IRequest } from '../applicationTypes';
-import { Response } from '../response';
+import { IURLQuery, IURLParams } from '../routerTypes.js';
+import { IAppContext, IRequest } from '../applicationTypes.js';
+import { Response } from '../response.js';
 
 export interface LoaderContextOptions {
   isServer: boolean;

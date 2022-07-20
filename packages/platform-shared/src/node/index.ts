@@ -1,2 +1,2 @@
-export * from './platform';
-export * from './route';
+export * from './platform/index.js';
+export * from './route/index.js';

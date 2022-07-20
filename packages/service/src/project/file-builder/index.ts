@@ -1,3 +1,3 @@
-export * from './fileBuilder';
-export * from './defineFile';
-export * from './types';
+export * from './fileBuilder.js';
+export * from './defineFile.js';
+export * from './types.js';

@@ -4,8 +4,8 @@ import {
   defineFile as originalDefineFile,
   FileOptions,
   DefineFileOption
-} from '@shuvi/service/lib/project';
-import { ProjectContext } from '../projectContext';
+} from '@shuvi/service/esm/project';
+import { ProjectContext } from '../projectContext.js';
 
 const EXT_REGEXP = /\.[a-zA-Z]+$/;
 

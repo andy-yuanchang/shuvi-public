@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useRef, useReducer } from 'react';
 import * as PropTypes from 'prop-types';
-import invariant from '@shuvi/utils/lib/invariant';
+import { invariant } from '@shuvi/utils/lib/invariant';
 import { RouterContext, RouteContext } from './contexts';
 import { useInRouterContext } from './hooks';
 import { __DEV__ } from './constants';

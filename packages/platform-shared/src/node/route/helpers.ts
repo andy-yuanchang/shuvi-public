@@ -1,9 +1,9 @@
 import fs from 'fs';
 import { join, extname, basename } from 'path';
-import { isDirectory } from '@shuvi/utils/lib/file';
-import invariant from '@shuvi/utils/lib/invariant';
-import { RouteConfigType } from './route';
-import { rankRouteBranches } from '../../shared/router';
+import { isDirectory } from '@shuvi/utils/lib/file.js';
+import { invariant } from '@shuvi/utils/lib/invariant.js';
+import { RouteConfigType } from './route.js';
+import { rankRouteBranches } from '../../shared/router.js';
 
 const supportFileTypes = ['page', 'layout', 'middleware', 'api'] as const;
 const allowReadFilExtList = ['ts', 'js', 'tsx', 'jsx'] as const;

@@ -1,5 +1,5 @@
-import { Application } from '../application';
-import { createRouter, createMemoryHistory } from '../router';
+import { Application } from '../application.js';
+import { createRouter, createMemoryHistory } from '../router.js';
 
 function getApp() {
   const app = new Application({

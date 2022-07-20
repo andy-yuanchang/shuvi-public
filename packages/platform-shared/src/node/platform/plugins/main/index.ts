@@ -1,6 +1,6 @@
 import { createPlugin } from '@shuvi/service';
-import { resolvePkgFile } from '../../../paths';
-import { extendedHooks } from './hooks';
+import { resolvePkgFile } from '../../../paths.js';
+import { extendedHooks } from './hooks.js';
 
 const core = createPlugin({
   setup: ({ addHooks }) => {

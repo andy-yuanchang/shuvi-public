@@ -1,4 +1,4 @@
-import { IRuntimeConfig } from './runtimeConfigTypes';
+import { IRuntimeConfig } from './runtimeConfigTypes.js';
 
 let runtimeConfig: IRuntimeConfig | null;
 let publicRuntimeConfig: IRuntimeConfig | null;

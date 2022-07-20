@@ -6,11 +6,11 @@
     "url": "git+https://github.com/shuvijs/shuvi.git",
     "directory": "packages/core"
   },
+  "type": "module",
   "author": "liximomo",
   "license": "MIT",
   "sideEffects": false,
   "files": [
-    "lib",
     "esm",
     "template",
     "shuvi-type-extensions-node.d.js",
@@ -18,42 +18,22 @@
   ],
   "exports": {
     "./shared": {
-      "import": {
-        "default": "./esm/shared/index.js"
-      },
-      "require": {
-        "default": "./lib/shared/index.js"
-      }
+      "default": "./esm/shared/index.js"
     },
     "./shared/*": {
-      "import": {
-        "default": "./esm/shared/*.js"
-      },
-      "require": {
-        "default": "./lib/shared/*.js"
-      }
+      "default": "./esm/shared/*.js"
     },
     "./shared/loader": {
-      "import": {
-        "default": "./esm/shared/loader/index.js"
-      },
-      "require": {
-        "default": "./lib/shared/loader/index.js"
-      }
+      "default": "./esm/shared/loader/index.js"
     },
     "./shared/store": {
-      "import": {
-        "default": "./esm/shared/store/index.js"
-      },
-      "require": {
-        "default": "./lib/shared/store/index.js"
-      }
+      "default": "./esm/shared/store/index.js"
     },
     "./node": {
-      "default": "./lib/node/index.js"
+      "default": "./esm/node/index.js"
     },
     "./node/*": {
-      "default": "./lib/node/*.js"
+      "default": "./esm/node/*.js"
     },
     "./shuvi-app": {
       "default": "./esm/shuvi-app/index.js"
@@ -69,13 +49,9 @@
     "./shuvi-type-extensions-runtime": "./shuvi-type-extensions-runtime.d.ts"
   },
   "scripts": {
-    "dev": "run-p watch:*",
-    "watch:esm": "tsc -p tsconfig.build.browser.json -w",
-    "watch:cjs": "tsc -p tsconfig.build.node.json -w",
-    "prebuild": "rimraf lib esm types",
-    "build": "run-p build:*",
-    "build:esm": "tsc -p tsconfig.build.browser.json",
-    "build:cjs": "tsc -p tsconfig.build.node.json"
+    "dev": "tsc -p tsconfig.build.json -w",
+    "prebuild": "rimraf esm",
+    "build": "tsc -p tsconfig.build.json"
   },
   "engines": {
     "node": ">= 12.0.0"

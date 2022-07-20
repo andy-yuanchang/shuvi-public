@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.build.json",
+  "compilerOptions": {
+    "lib": ["esnext", "DOM"],
+    "esModuleInterop": true, 
+    "module": "NodeNext",
+    "rootDir": "./src",
+    "outDir": "esm"
+  },
+  "files": ["./shuvi-type-extensions-runtime.d.ts", "./shuvi-type-extensions-node.d.ts"],
+  "include": ["src"]
+}

@@ -1,4 +1,4 @@
-import invariant from '@shuvi/utils/lib/invariant';
+import { invariant } from '@shuvi/utils/lib/invariant';
 import { resolve } from '@shuvi/utils/lib/resolve';
 import { isPluginInstance, IPluginInstance } from '@shuvi/hook';
 import * as path from 'path';

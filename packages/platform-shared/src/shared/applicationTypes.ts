@@ -1,8 +1,8 @@
 import type { IncomingMessage } from 'http';
 import { IStoreManager } from '@shuvi/redox';
 import { CustomAppContext } from '@shuvi/runtime';
-import { IRouter } from './routerTypes';
-import { IPluginList } from './lifecycle';
+import { IRouter } from './routerTypes.js';
+import { IPluginList } from './lifecycle.js';
 
 export type IRequest = IncomingMessage & {
   [x: string]: any;

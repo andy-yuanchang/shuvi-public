@@ -1,4 +1,4 @@
-import { getAppData } from './getAppData';
+import { getAppData } from './getAppData.js';
 
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 

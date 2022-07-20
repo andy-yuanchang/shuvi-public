@@ -1,5 +1,5 @@
-import pluginMain from './plugins/main';
+import pluginMain from './plugins/main/index.js';
 
-export * from './runtimeFiles';
+export * from './runtimeFiles.js';
 
 export const SharedPlugins = [pluginMain];

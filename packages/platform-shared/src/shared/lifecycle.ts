@@ -8,7 +8,7 @@ import {
   HookMap
 } from '@shuvi/hook';
 import { CustomRuntimePluginHooks } from '@shuvi/runtime';
-import { IAppContext } from './applicationTypes';
+import { IAppContext } from './applicationTypes.js';
 
 export type AppComponent = unknown;
 

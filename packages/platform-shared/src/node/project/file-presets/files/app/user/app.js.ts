@@ -1,6 +1,6 @@
-import { fileUtils } from '@shuvi/service/lib/project';
-import { defineFile } from '../../..';
-import { ProjectContext } from '../../../../projectContext';
+import { fileUtils } from '@shuvi/service/esm/project';
+import { defineFile } from '../../../index.js';
+import { ProjectContext } from '../../../../projectContext.js';
 
 const { getAllFiles, getFirstModuleExport } = fileUtils;
 

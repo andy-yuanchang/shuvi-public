@@ -1,6 +1,6 @@
-import type { IRouter, PathRecord } from '../router';
-import { getAppData } from './getAppData';
-import { getPublicPath } from './getPublicPath';
+import type { IRouter, PathRecord } from '../router.js';
+import { getAppData } from './getAppData.js';
+import { getPublicPath } from './getPublicPath.js';
 
 export type RouteFile = {
   id: string;

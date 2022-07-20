@@ -1,6 +1,6 @@
 import { defineModel } from '@shuvi/redox';
-import { SHUVI_ERROR } from '@shuvi/shared/lib/constants';
-import { IErrorState, IError } from '../applicationTypes';
+import { SHUVI_ERROR } from '@shuvi/shared/lib/constants.js';
+import { IErrorState, IError } from '../applicationTypes.js';
 
 const DEFAULT_ERRORSTATE = {
   error: undefined

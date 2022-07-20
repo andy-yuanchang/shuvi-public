@@ -1,2 +1,2 @@
-export { getFilePresets } from './file-presets';
-export { createProjectContext } from './projectContext';
+export { getFilePresets } from './file-presets/index.js';
+export { createProjectContext } from './projectContext.js';

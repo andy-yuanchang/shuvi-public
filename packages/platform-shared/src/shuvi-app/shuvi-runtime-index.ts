@@ -5,6 +5,6 @@
  *  import {} from '@shuvi/runtime'
  *
  */
-export { createRuntimePlugin } from '../shared/lifecycle';
-export { getPageData } from '../shared/helper/getPageData';
-export type { Loader } from '../shared/loader';
+export { createRuntimePlugin } from '../shared/lifecycle.js';
+export { getPageData } from '../shared/helper/getPageData.js';
+export type { Loader } from '../shared/loader/index.js';

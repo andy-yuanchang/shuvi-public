@@ -5,4 +5,4 @@ export {
   getPageRoutes,
   getApiRoutes,
   getMiddlewareRoutes
-} from './route';
+} from './route.js';

@@ -63,4 +63,4 @@ function isEqual(obj1: any, obj2: any) {
   return arePrimativesEqual();
 }
 
-export default isEqual;
+export { isEqual };

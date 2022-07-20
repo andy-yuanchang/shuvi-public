@@ -1,5 +1,5 @@
-import { defineFile } from '../../..';
-import { ProjectContext } from '../../../../projectContext';
+import { defineFile } from '../../../index.js';
+import { ProjectContext } from '../../../../projectContext.js';
 
 export default (context: ProjectContext) =>
   defineFile({

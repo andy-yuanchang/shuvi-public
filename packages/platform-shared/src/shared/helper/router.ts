@@ -1,6 +1,6 @@
-import isEqual from '@shuvi/utils/lib/isEqual';
-import { IRoute, IPageRouteRecord, IRouteMatch } from '../routerTypes';
-import { Loader } from '../loader';
+import { isEqual } from '@shuvi/utils/lib/isEqual.js';
+import { IRoute, IPageRouteRecord, IRouteMatch } from '../routerTypes.js';
+import { Loader } from '../loader/index.js';
 
 type PreloadFn = () => Promise<void>;
 

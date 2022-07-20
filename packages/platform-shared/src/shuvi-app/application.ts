@@ -1,12 +1,16 @@
 import * as customApp from '@shuvi/app/user/app';
 import { pluginRecord } from '@shuvi/app/core/plugins';
-import { Application } from '../shared/application';
-import { createRuntimePlugin, IAppModule, IApplicationOptions } from './shared';
+import { Application } from '../shared/application.js';
+import {
+  createRuntimePlugin,
+  IAppModule,
+  IApplicationOptions
+} from './shared.js';
 import {
   IRuntimePluginConstructor,
   IPluginRecord,
   IPluginList
-} from '../shared/lifecycle';
+} from '../shared/lifecycle.js';
 
 export { Application };
 

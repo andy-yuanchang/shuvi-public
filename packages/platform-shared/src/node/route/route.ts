@@ -1,10 +1,10 @@
 import { basename, extname, join, dirname, sep } from 'path';
-import { isDirectory } from '@shuvi/utils/lib/file';
+import { isDirectory } from '@shuvi/utils/lib/file.js';
 import {
   IPageRouteConfig,
   IApiRouteConfig,
   IMiddlewareRouteConfig
-} from '../../shared';
+} from '../../shared/index.js';
 import {
   getAllowFilesAndDirs,
   hasAllowFiles,
@@ -12,8 +12,8 @@ import {
   combineComponents,
   sortRoutes,
   SupportFileType
-} from './helpers';
-import { matchFile, getFileMatcherPatterns } from './matchSpec';
+} from './helpers.js';
+import { matchFile, getFileMatcherPatterns } from './matchSpec.js';
 
 export type { IPageRouteConfig, IApiRouteConfig, IMiddlewareRouteConfig };
 

@@ -1,15 +1,15 @@
-import { getManager, PluginManager } from './lifecycle';
-import { initPlugins } from './lifecycle';
+import { getManager, PluginManager } from './lifecycle.js';
+import { initPlugins } from './lifecycle.js';
 import { Store, redox } from '@shuvi/redox';
-import { ErrorModel, errorModel } from './models/error';
-import { IRouter } from './routerTypes';
+import { ErrorModel, errorModel } from './models/error.js';
+import { IRouter } from './routerTypes.js';
 import {
   IStoreManager,
   IApplication,
   IAppContext,
   IApplicationOptions,
   IRerenderConfig
-} from './applicationTypes';
+} from './applicationTypes.js';
 
 export class Application {
   private _error: Store<ErrorModel>;

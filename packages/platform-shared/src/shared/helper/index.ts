@@ -1,5 +1,5 @@
-export { IData, IAppData, getAppData } from './getAppData';
-export { getPageData } from './getPageData';
-export * from './getPublicPath';
-export * from './getFilesOfRoute';
-export * from './router';
+export { IData, IAppData, getAppData } from './getAppData.js';
+export { getPageData } from './getPageData.js';
+export * from './getPublicPath.js';
+export * from './getFilesOfRoute.js';
+export * from './router.js';

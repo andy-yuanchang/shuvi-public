@@ -1,10 +1,10 @@
-import { getFixturePath, normalizeWarnings, normalizePath } from './utils';
+import { getFixturePath, normalizeWarnings, normalizePath } from './utils.js';
 import {
   getRawRoutesFromDir,
   getMiddlewareRoutes,
   getPageRoutes,
   getApiRoutes
-} from '../route';
+} from '../route.js';
 
 describe('route/raw-route', () => {
   const getRawRoutes = async (

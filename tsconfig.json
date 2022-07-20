@@ -5,7 +5,6 @@
     "paths": {
       "@shuvi/toolpack/lib/*": ["packages/toolpack/src/*"],
       "@shuvi/hook/lib/*": ["packages/hook/src/*"],
-      "@shuvi/service/lib/*": ["packages/service/src/*"],
       "@shuvi/utils/lib/*": ["packages/utils/src/*"],
       "@shuvi/libs/lib/*": ["packages/libs/src/*"],
       "@shuvi/router": ["packages/router/src/index"],
