@@ -1,4 +1,4 @@
-import invariant from '@shuvi/utils/lib/invariant';
+import { invariant } from '@shuvi/utils/lib/invariant';
 import { createDefer, Defer } from '@shuvi/utils';
 import * as fs from 'fs-extra';
 import * as path from 'path';

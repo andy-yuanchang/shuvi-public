@@ -1,7 +1,7 @@
 import { IncomingMessage, ServerResponse } from 'http';
 import { createSyncWaterfallHook, createAsyncParallelHook } from '@shuvi/hook';
 import { IAppContext } from '@shuvi/platform-shared/shared';
-import { IHtmlDocument } from '../html-render';
+import { IHtmlDocument } from '../html-render/index.js';
 
 export type IHandlePageRequest = (
   req: IncomingMessage,

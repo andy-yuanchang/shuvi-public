@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { IApplication, errorModel } from '@shuvi/platform-shared/shared';
 import { createContainer } from '@shuvi/redox-react';
-import { AppProvider } from './applicationContext';
-import ErrorPage from './ErrorPage';
-import { ErrorBoundary } from './ErrorBoundary';
+import { AppProvider } from './applicationContext.jsx';
+import ErrorPage from './ErrorPage.jsx';
+import { ErrorBoundary } from './ErrorBoundary.jsx';
 
 const { Provider, useSharedModel } = createContainer();
 

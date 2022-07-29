@@ -1,10 +1,11 @@
 import { matchRoutes } from '@shuvi/router';
-import { ROUTE_RESOURCE_QUERYSTRING } from '@shuvi/shared/lib/constants';
-import { clientManifest } from '@shuvi/service/lib/resources';
+import { ROUTE_RESOURCE_QUERYSTRING } from '@shuvi/shared/lib/constants.js';
 import { IRequestHandlerWithNext, IServerPluginContext } from '@shuvi/service';
-import { DevMiddleware } from '@shuvi/service/lib/server/middlewares/dev';
-import ModuleReplacePlugin from '@shuvi/toolpack/lib/webpack/plugins/module-replace-plugin';
-import { getRoutes } from '../filesystem-routes/index';
+import { DevMiddleware } from '@shuvi/service/server/middlewares/dev';
+import ModuleReplacePlugin from '@shuvi/toolpack/lib/webpack/plugins/module-replace-plugin/index.js';
+import { getRoutes } from '../filesystem-routes/index.js';
+import resources from '@shuvi/service/resources';
+const { clientManifest } = resources;
 
 function acceptsHtml(
   header: string,
@@ -48,7 +49,8 @@ export default class OnDemandRouteManager {
         return next();
       }
 
-      const task = ModuleReplacePlugin.restoreModule(chunkInitiatorModule);
+      const task =
+        ModuleReplacePlugin.default.restoreModule(chunkInitiatorModule);
       if (task) {
         await this.devMiddleware.invalidate();
         await task;
@@ -98,7 +100,7 @@ export default class OnDemandRouteManager {
     }
 
     const tasks = modules
-      .map(m => ModuleReplacePlugin.restoreModule(m))
+      .map(m => ModuleReplacePlugin.default.restoreModule(m))
       .filter(Boolean);
     if (tasks.length) {
       this.devMiddleware.invalidate();

@@ -1,11 +1,10 @@
 import * as path from 'path';
 import { createPlugin } from '@shuvi/service';
-import { resolveLib } from '../../../paths';
+import { resolveLib, resolvePkgFile } from '../../../paths.js';
+import { require } from '../../../paths.js';
 
 // todo: optimize this
-const runtimePath = require.resolve(
-  path.join(__dirname, '../../../../../esm/shuvi-app/react/redox-react/runtime')
-);
+const runtimePath = resolvePkgFile('esm/shuvi-app/react/redox-react/runtime');
 const core = createPlugin({
   addRuntimeService: () => [
     {

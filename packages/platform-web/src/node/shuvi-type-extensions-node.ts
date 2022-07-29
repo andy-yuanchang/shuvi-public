@@ -1,21 +1,21 @@
 import '@shuvi/platform-shared/shuvi-type-extensions-node';
-import { IManifest } from '@shuvi/toolpack/lib/webpack/types';
+import { IManifest } from '@shuvi/toolpack/lib/webpack/types.js';
 import {
   IMiddlewareRoutes,
   CreateAppServer,
   IApiRoutes,
   IServerModule,
   PlatformWebCustomConfig
-} from '../shared/index';
-import { IViewServer } from './features/html-render/index';
+} from '../shared/index.js';
+import { IViewServer } from './features/html-render/index.js';
 import {
   addRoutes,
   addMiddlewareRoutes
-} from './features/filesystem-routes/hooks';
-import { extendedHooks } from './features/html-render/serverHooks';
+} from './features/filesystem-routes/hooks.js';
+import { extendedHooks } from './features/html-render/serverHooks.js';
 export {};
 
-declare module '@shuvi/service/lib/resources' {
+declare module '@shuvi/service/resources' {
   export const server: {
     server: IServerModule;
     apiRoutes: IApiRoutes;

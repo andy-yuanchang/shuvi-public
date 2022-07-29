@@ -8,17 +8,18 @@ import {
   getMiddlewares,
   getMiddlewaresBeforeDevMiddlewares,
   getMainPlugin
-} from './features';
-import { resolvePkgFile } from './paths';
+} from './features/index.js';
+import { resolvePkgFile } from './paths.js';
 
-export { PlatformWebCustomConfig } from '../shared/configTypes';
+export { PlatformWebCustomConfig } from '../shared/configTypes.js';
 
 const platform =
   ({ framework = 'react' } = {}): IPlatform =>
   async platformContext => {
     const mainPlugin = getMainPlugin(platformContext);
 
-    const platformFramework = require(`./targets/${framework}`).default;
+    const platformFramework = (await import(`./targets/${framework}/index.js`))
+      .default;
     const platformFrameworkContent = await platformFramework();
 
     const platformModule = platformFrameworkContent.platformModule as string;

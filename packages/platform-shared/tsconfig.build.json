@@ -3,7 +3,7 @@
   "compilerOptions": {
     "lib": ["esnext", "DOM"],
     "esModuleInterop": true, 
-    "module": "NodeNext",
+    "module": "ESNext",
     "rootDir": "./src",
     "outDir": "esm"
   },

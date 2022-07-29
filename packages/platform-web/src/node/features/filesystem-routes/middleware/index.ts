@@ -1,2 +1,2 @@
-export { middleware } from './middleware';
-export { generateRoutesContent, IMiddlewareRouteConfig } from './routes';
+export { middleware } from './middleware.js';
+export { generateRoutesContent, IMiddlewareRouteConfig } from './routes.js';

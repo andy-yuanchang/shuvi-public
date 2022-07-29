@@ -1,6 +1,11 @@
-import * as path from 'path';
+import path from 'path';
+import { createRequire } from 'node:module';
+export const require = createRequire(import.meta.url);
 
-const PACKAGE_DIR = path.resolve(__dirname, '..', '..');
+export const dirname = (metaUrl: string) =>
+  path.dirname(new URL(metaUrl).pathname);
+
+const PACKAGE_DIR = path.resolve(dirname(import.meta.url), '..', '..');
 
 // export const resolveToModulePath = (...paths: string[]) =>
 //   `@shuvi/platform-web/${paths.join('/')}`;

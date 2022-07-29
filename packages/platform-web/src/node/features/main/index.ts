@@ -5,15 +5,15 @@ import {
   BUILD_CLIENT_RUNTIME_POLYFILL,
   createPlugin
 } from '@shuvi/service';
-import { IPlatformContext, ResolvedPlugin } from '@shuvi/service/lib/core';
+import { IPlatformContext, ResolvedPlugin } from '@shuvi/service/core';
 
-import { BUNDLER_TARGET_SERVER } from '@shuvi/shared/lib/constants';
-import { webpackHelpers } from '@shuvi/toolpack/lib/webpack/config';
-import { IWebpackEntry } from '@shuvi/service/lib/bundler/config';
-import generateResource from './generateResource';
-import { resolvePkgFile } from '../../paths';
-import { buildHtml } from './buildHtml';
-import { getMiddlewares } from '../middlewares';
+import { BUNDLER_TARGET_SERVER } from '@shuvi/shared/lib/constants.js';
+import { webpackHelpers } from '@shuvi/toolpack/lib/webpack/config/index.js';
+import { IWebpackEntry } from '@shuvi/service/bundler/config';
+import generateResource from './generateResource.js';
+import { resolvePkgFile } from '../../paths.js';
+import { buildHtml } from './buildHtml.js';
+import { getMiddlewares } from '../middlewares.js';
 
 function getServerEntry(): IWebpackEntry {
   return {

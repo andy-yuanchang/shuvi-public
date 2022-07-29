@@ -7,7 +7,7 @@ import '@shuvi/app/core/entry';
 
 // app starts here
 if (process.env.NODE_ENV === 'development') {
-  require('./run.dev');
+  import('./run.dev.js');
 } else {
-  require('./run.prod');
+  import('./run.prod.js');
 }

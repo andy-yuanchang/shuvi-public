@@ -1,4 +1,4 @@
-import { CLIENT_CONTAINER_ID } from '@shuvi/shared/lib/constants';
+import { CLIENT_CONTAINER_ID } from '@shuvi/shared/lib/constants.js';
 // renderer must be imported before application
 // we need to init init renderer before import AppComponent
 import {
@@ -8,7 +8,7 @@ import {
 } from '@shuvi/app/core/platform';
 import routes from '@shuvi/app/files/routes';
 import { getAppData } from '@shuvi/platform-shared/shared/helper/getAppData';
-import { createApp } from '../../app/client';
+import { createApp } from '../../app/client.js';
 
 const appData = getAppData();
 

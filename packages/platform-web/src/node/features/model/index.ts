@@ -1,7 +1,7 @@
 import * as path from 'path';
 import { createPlugin } from '@shuvi/service';
-import { resolvePkgFile } from '../../paths';
-import server from './server';
+import { resolvePkgFile, require } from '../../paths.js';
+import server from './server.js';
 
 const resolveLib = (module: string) =>
   path.dirname(require.resolve(path.join(module, 'package.json')));
@@ -23,8 +23,8 @@ const core = createPlugin({
 export default {
   core,
   runtime: {
-    plugin: resolvePkgFile('lib/node/features/model/runtime.js')
+    plugin: resolvePkgFile('esm/node/features/model/runtime.js')
   },
   server,
-  types: resolvePkgFile('lib/node/features/model/shuvi-app.d.ts')
+  types: resolvePkgFile('esm/node/features/model/shuvi-app.d.ts')
 };

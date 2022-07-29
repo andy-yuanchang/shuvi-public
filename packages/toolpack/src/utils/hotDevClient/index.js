@@ -48,7 +48,7 @@ import { DEFAULT_TIMEOUT_MS } from '../../constants';
 let hadRuntimeError = false;
 let customHmrEventHandler;
 
-export default function connect(options) {
+export function connect(options) {
   // Open stack traces in an editor.
   ErrorOverlay.setEditorHandler(function editorHandler({
     fileName,

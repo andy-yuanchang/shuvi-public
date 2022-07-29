@@ -1,7 +1,7 @@
 import { inspect } from 'util';
 import program from 'commander';
-import chalk from '@shuvi/utils/lib/chalk';
-import { getBundler } from '@shuvi/service/lib/bundler/bundler';
+import { chalk } from '@shuvi/utils/lib/chalk';
+import { getBundler } from '@shuvi/service/bundler/bundler';
 import { getPackageInfo, getProjectDir } from '../utils';
 import { getConfigFromCli } from '../config';
 import { initShuvi } from '../shuvi';

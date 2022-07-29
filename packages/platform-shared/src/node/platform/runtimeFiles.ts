@@ -1,5 +1,5 @@
 import { IPluginContext } from '@shuvi/service';
-import { fileUtils } from '@shuvi/service/esm/project';
+import { fileUtils } from '@shuvi/service/project';
 import {
   setRuntimeConfig,
   setPublicRuntimeConfig
@@ -66,6 +66,6 @@ export const getPresetRuntimeFilesCreator =
     const appEntryCodes = (await runner.addEntryCode()).flat();
     context.entryCodes.push(...appEntryCodes);
     context.polyfills.push(...polyfills, ...appPolyfills);
-    const files = getFilePresets(context);
+    const files = await getFilePresets(context);
     return files;
   };

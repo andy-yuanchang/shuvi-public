@@ -1,4 +1,4 @@
-import { getFixturePath, normalizeWarnings, normalizePath } from './utils.js';
+import { getFixturePath, normalizeWarnings, normalizePath } from './utils';
 import {
   getRawRoutesFromDir,
   getMiddlewareRoutes,

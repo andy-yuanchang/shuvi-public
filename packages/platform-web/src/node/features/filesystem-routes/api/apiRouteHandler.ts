@@ -2,7 +2,7 @@ import { IncomingMessage } from 'http';
 import { Stream } from 'stream';
 import * as querystring from 'querystring';
 import * as cookie from 'cookie';
-const getRawBody = require('raw-body');
+import getRawBody from 'raw-body';
 import * as contentType from 'content-type';
 import { IResponse, IRequest } from '@shuvi/service';
 import {
@@ -10,7 +10,7 @@ import {
   IApiReq,
   IApiRes,
   IApiResponse
-} from '../../../../shared';
+} from '../../../../shared/index.js';
 
 export { IApiRequestHandler };
 

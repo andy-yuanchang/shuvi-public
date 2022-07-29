@@ -1,4 +1,4 @@
-import { IServerModule as _IServerModule } from '../shared';
+import { IServerModule as _IServerModule } from '../shared/index.js';
 
 type ServerModule = Required<_IServerModule>;
 

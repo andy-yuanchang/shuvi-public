@@ -1,2 +1,2 @@
-export { default } from './loadable';
-export { LoadableContext } from './loadable-context';
+export { default } from './loadable.js';
+export { LoadableContext } from './loadable-context.js';

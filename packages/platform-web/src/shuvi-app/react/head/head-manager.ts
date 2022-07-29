@@ -1,8 +1,8 @@
 // Based on https://github.com/zeit/next.js
 // License: https://github.com/zeit/next.js/blob/977bf8d9ebd2845241b8689317f36e4e487f39d0/license.md
 
-import { HeadState, HeadItem } from './types';
-import { SHUVI_HEAD_ATTRIBUTE } from './head';
+import { HeadState, HeadItem } from './types.js';
+import { SHUVI_HEAD_ATTRIBUTE } from './head.jsx';
 
 export default class HeadManager {
   private _pedningPromise: Promise<void> | null = null;

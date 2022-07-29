@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Head } from './head';
+import { Head } from './head/index.js';
 
 const style = {
   container: {

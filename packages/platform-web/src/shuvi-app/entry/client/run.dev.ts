@@ -2,9 +2,9 @@
 import {
   DEV_STYLE_HIDE_FOUC,
   DEV_STYLE_PREPARE
-} from '@shuvi/shared/lib/constants';
-import initWebpackHMR from '../../dev/webpackHotDevClient';
-import { run } from './app';
+} from '@shuvi/shared/lib/constants.js';
+import initWebpackHMR from '../../dev/webpackHotDevClient.js';
+import { run } from './app.js';
 
 async function init() {
   initWebpackHMR();

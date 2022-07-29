@@ -1,5 +1,5 @@
-import { BaseRenderer, AppData } from './base';
-import { IRenderDocumentOptions, IHtmlDocument } from './types';
+import { BaseRenderer, AppData } from './base.js';
+import { IRenderDocumentOptions, IHtmlDocument } from './types.js';
 
 export class SpaRenderer extends BaseRenderer {
   renderDocument({ app }: IRenderDocumentOptions) {

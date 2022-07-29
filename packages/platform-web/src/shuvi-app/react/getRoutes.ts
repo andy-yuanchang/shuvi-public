@@ -2,7 +2,7 @@ import {
   IPageRouteRecord,
   IRawPageRouteRecord
 } from '@shuvi/platform-shared/shared';
-import { loadRouteComponent } from './loadRouteComponent';
+import { loadRouteComponent } from './loadRouteComponent.jsx';
 
 export default function getRoutes(
   routes: IRawPageRouteRecord[]

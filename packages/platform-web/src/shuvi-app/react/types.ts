@@ -1,5 +1,5 @@
 import { IAppState } from '@shuvi/platform-shared/shared';
-import { IHtmlTag, IViewClient, IViewServer } from '../../shared';
+import { IHtmlTag, IViewClient, IViewServer } from '../../shared/index.js';
 
 export { IHtmlTag };
 

@@ -1,6 +1,6 @@
 import { IStoreManager } from '@shuvi/redox';
 import { createRuntimePlugin } from '@shuvi/platform-shared/shared';
-import { RedoxWrapper } from './RedoxWrapper';
+import { RedoxWrapper } from './RedoxWrapper.jsx';
 
 export default createRuntimePlugin({
   appComponent: async (App, appContext) => {

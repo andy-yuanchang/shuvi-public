@@ -44,6 +44,9 @@ module.exports = {
   moduleNameMapper: {
     '^shuvi-test-utils(/?.*)$': '<rootDir>/test/utils/$1',
     '^@shuvi/plugins/model$': '@shuvi/plugins/lib/model',
-    '^@shuvi/plugins/model/(.*)': '@shuvi/plugins/lib/model/$1'
+    '^@shuvi/plugins/model/(.*)': '@shuvi/plugins/lib/model/$1',
+    // In order to make jest compatible with ESModule, due to package.json has set "type" field to "module"
+    '^(\\.{1,2}/.*)\\.js$': '$1',
+    '^(\\.{1,2}/.*)\\.jsx$': '$1'
   }
 };

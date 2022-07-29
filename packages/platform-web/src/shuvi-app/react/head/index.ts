@@ -1,6 +1,6 @@
-import Head from './head';
-import HeadManager from './head-manager';
+import Head from './head.jsx';
+import HeadManager from './head-manager.js';
 
-export { HeadManagerContext } from './head-manager-context';
+export { HeadManagerContext } from './head-manager-context.js';
 
 export { Head, HeadManager };

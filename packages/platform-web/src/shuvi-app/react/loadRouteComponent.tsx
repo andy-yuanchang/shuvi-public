@@ -1,7 +1,7 @@
 /// <reference lib="dom" />
 
 import * as React from 'react';
-import dynamic, { DynamicOptions } from './dynamic';
+import dynamic, { DynamicOptions } from './dynamic.jsx';
 
 export function loadRouteComponent(
   loader: () => Promise<any>,

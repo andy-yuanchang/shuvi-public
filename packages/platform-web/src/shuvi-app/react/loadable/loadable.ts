@@ -25,7 +25,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
 
 import * as React from 'react';
 import { useSyncExternalStore } from 'use-sync-external-store/shim';
-import { LoadableContext } from './loadable-context';
+import { LoadableContext } from './loadable-context.js';
 
 type Options = any;
 

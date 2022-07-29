@@ -1,14 +1,18 @@
 import { IServerPluginContext } from '@shuvi/service';
-import { documentPath } from '@shuvi/service/lib/resources';
-import { stringifyTag, stringifyAttrs } from './htmlTag';
-import { parseTemplateFile, renderTemplate } from '../viewTemplate';
-import { IRendererConstructorOptions, IRenderDocumentOptions } from './types';
-import { BaseRenderer } from './base';
-import { SpaRenderer } from './spa';
-import { SsrRenderer } from './ssr';
-import { IHtmlDocument } from './types';
+import { stringifyTag, stringifyAttrs } from './htmlTag.js';
+import { parseTemplateFile, renderTemplate } from '../viewTemplate.js';
+import {
+  IRendererConstructorOptions,
+  IRenderDocumentOptions
+} from './types.js';
+import { BaseRenderer } from './base.js';
+import { SpaRenderer } from './spa.js';
+import { SsrRenderer } from './ssr.js';
+import { IHtmlDocument } from './types.js';
+import resources from '@shuvi/service/resources';
+const { documentPath } = resources;
 
-export * from './types';
+export * from './types.js';
 
 export interface ITemplateData {
   [x: string]: any;

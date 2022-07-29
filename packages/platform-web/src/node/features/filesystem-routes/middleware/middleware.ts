@@ -1,6 +1,7 @@
 import { IServerPluginContext, IRequestHandlerWithNext } from '@shuvi/service';
 import { matchPathname } from '@shuvi/router';
-import { server } from '@shuvi/service/lib/resources';
+import resources from '@shuvi/service/resources';
+const { server } = resources;
 
 export function middleware(
   _api: IServerPluginContext

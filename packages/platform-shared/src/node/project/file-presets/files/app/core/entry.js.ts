@@ -1,4 +1,4 @@
-import { fileUtils } from '@shuvi/service/esm/project';
+import { fileUtils } from '@shuvi/service/project';
 import { defineFile } from '../../../index.js';
 import { ProjectContext } from '../../../../projectContext.js';
 import * as os from 'os';

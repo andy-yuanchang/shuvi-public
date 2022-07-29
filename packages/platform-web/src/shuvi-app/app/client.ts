@@ -19,8 +19,8 @@ import {
 } from '@shuvi/router';
 import pageLoaders from '@shuvi/app/files/page-loaders';
 import { historyMode } from '@shuvi/app/files/routerConfig';
-import { SHUVI_ERROR } from '@shuvi/shared/lib/constants';
-import { CreateAppClient } from '../../shared';
+import { SHUVI_ERROR } from '@shuvi/shared/lib/constants.js';
+import { CreateAppClient } from '../../shared/index.js';
 
 let app: Application;
 

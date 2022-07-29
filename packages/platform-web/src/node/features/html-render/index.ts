@@ -1,6 +1,6 @@
 import { createPlugin } from '@shuvi/service';
-import { resolvePkgFile } from '../../paths';
-import server from './server';
+import { resolvePkgFile } from '../../paths.js';
+import server from './server.js';
 
 export {
   getPageMiddleware,
@@ -8,7 +8,7 @@ export {
   ITemplateData,
   IViewServer,
   IViewClient
-} from './lib';
+} from './lib/index.js';
 
 const core = createPlugin({
   addRuntimeFile: ({ defineFile }, context) => {
@@ -31,5 +31,5 @@ const core = createPlugin({
 export default {
   core,
   server,
-  types: resolvePkgFile('lib/node/features/html-render/shuvi-app.d.ts')
+  types: resolvePkgFile('esm/node/features/html-render/shuvi-app.d.ts')
 };

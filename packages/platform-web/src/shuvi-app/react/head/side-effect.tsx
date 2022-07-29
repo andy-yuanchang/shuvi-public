@@ -3,7 +3,7 @@
 
 import * as React from 'react';
 import { Component, PropsWithChildren } from 'react';
-import { SideEffectProps, HeadState } from './types';
+import { SideEffectProps, HeadState } from './types.js';
 
 const isServer = typeof window === 'undefined';
 

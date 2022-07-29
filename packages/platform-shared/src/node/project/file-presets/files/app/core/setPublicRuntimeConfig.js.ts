@@ -5,6 +5,6 @@ export default () =>
   defineFile({
     content: () =>
       `export { setPublicRuntimeConfig as default } from '${resolvePkgFile(
-        'lib/shared/shuvi-singleton-runtimeConfig'
+        'esm/shared/shuvi-singleton-runtimeConfig'
       )}'`
   });

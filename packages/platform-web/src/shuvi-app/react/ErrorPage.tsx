@@ -1,5 +1,5 @@
 import * as React from 'react';
-import error from './Error';
+import error from './Error.jsx';
 import userError from '@shuvi/app/core/error';
 
 const Error = userError || error;

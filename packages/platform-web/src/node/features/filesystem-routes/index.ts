@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { buildToString } from '@shuvi/toolpack/lib/utils/build-loaders';
+import { buildToString } from '@shuvi/toolpack/lib/utils/build-loaders.js';
 import { createPlugin } from '@shuvi/service';
 import {
   getPageRoutes,
@@ -11,23 +11,23 @@ import {
   IApiRouteConfig
 } from '@shuvi/platform-shared/node';
 import { IPageRouteConfigWithId } from '@shuvi/platform-shared/shared';
-import { ifComponentHasLoader } from '../html-render/lib';
-import { addRoutes, addMiddlewareRoutes } from './hooks';
+import { ifComponentHasLoader } from '../html-render/lib/index.js';
+import { addRoutes, addMiddlewareRoutes } from './hooks.js';
 import {
   getRoutes,
   setRoutes,
   normalizeRoutes as normalizePageRoutes,
   generateRoutesContent as generatePageRoutesContent
-} from './page';
+} from './page/index.js';
 import {
   middleware as getMiddlewareMiddleware,
   generateRoutesContent as generateMiddlewareRoutesContent
-} from './middleware';
+} from './middleware/index.js';
 import {
   IApiRequestHandler,
   middleware as getApiMiddleware,
   generateRoutesContent as generateApiRoutesContent
-} from './api';
+} from './api/index.js';
 
 export {
   IApiRequestHandler,

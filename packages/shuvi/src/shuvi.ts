@@ -1,10 +1,11 @@
 import { IPlatform, getApi, Api } from '@shuvi/service';
-import platformWeb from '@shuvi/platform-web';
 import { ShuviMode, ShuviPhase } from './types';
 import { ShuviConfig, normalizeConfig } from './config';
 
-export function getPlatform(): IPlatform {
-  return platformWeb({ framework: 'react' });
+export async function getPlatform(): Promise<IPlatform> {
+  const platformWeb = await import('@shuvi/platform-web');
+  //@ts-ignore
+  return platformWeb.default({ framework: 'react' });
 }
 
 export interface ShuviOption {
@@ -20,12 +21,13 @@ export async function initShuvi({
 }: ShuviOption): Promise<Api> {
   const normalizedConfig = normalizeConfig(config);
   const { plugins, presets, ...restConfig } = normalizedConfig;
+  const platform = await getPlatform();
   const shuvi = await getApi({
     ...options,
     plugins,
     presets,
     config: restConfig,
-    platform: getPlatform()
+    platform
   });
 
   return shuvi;

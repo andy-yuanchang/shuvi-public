@@ -9,7 +9,7 @@ import {
   PathRecord,
   getFilesOfRoute
 } from '@shuvi/platform-shared/shared';
-import useIntersection from './utils/useIntersection';
+import useIntersection from './utils/useIntersection.jsx';
 
 const ABSOLUTE_URL_REGEX = /^[a-zA-Z][a-zA-Z\d+\-.]*?:/;
 const prefetched: { [cacheKey: string]: boolean } = {};

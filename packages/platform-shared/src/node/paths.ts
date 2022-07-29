@@ -1,11 +1,14 @@
 import path from 'path';
 
-export const PackageDir = path.resolve(__dirname, '..', '..');
+export const dirname = (metaUrl: string) =>
+  path.dirname(new URL(metaUrl).pathname);
+
+export const PackageDir = path.resolve(dirname(import.meta.url), '..', '..');
 
 export const resolvePluginFile = (pluginName: string, ...paths: string[]) =>
   path.join(
     PackageDir,
-    'lib',
+    'esm',
     'node',
     'platform',
     'plugins',

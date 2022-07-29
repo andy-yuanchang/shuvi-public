@@ -1,7 +1,12 @@
 import * as path from 'path';
 import * as fs from 'fs-extra';
 import formatWebpackMessages from '@shuvi/toolpack/lib/utils/formatWebpackMessages';
-import { IPluginContext, getBundler, BUILD_DEFAULT_DIR } from '@shuvi/service';
+import {
+  IPluginContext,
+  getBundler,
+  BUILD_DEFAULT_DIR,
+  Api
+} from '@shuvi/service';
 import { ShuviConfig } from '../config';
 import { initShuvi } from '../shuvi';
 
@@ -49,7 +54,7 @@ function copyPublicFolder(context: IPluginContext) {
   );
 }
 
-export async function build(options: IBuildOptions) {
+export async function build(options: IBuildOptions): Promise<Api> {
   const opts = {
     ...defaultBuildOptions,
     ...options

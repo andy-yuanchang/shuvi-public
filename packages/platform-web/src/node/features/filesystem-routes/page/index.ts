@@ -1,6 +1,2 @@
-export {
-  normalizeRoutes,
-  generateRoutesContent,
-  IPageRouteConfig
-} from './routes';
-export * from './store';
+export { normalizeRoutes, generateRoutesContent } from './routes.js';
+export * from './store.js';

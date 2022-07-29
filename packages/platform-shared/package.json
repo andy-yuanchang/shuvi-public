@@ -44,7 +44,7 @@
     "./template/*": "./template/*",
     "./shuvi-type-extensions-node": {
       "types": "./shuvi-type-extensions-node.d.js",
-      "default": "./shuvi-type-extensions-node.js"
+      "default": "./shuvi-type-extensions-node.mjs"
     },
     "./shuvi-type-extensions-runtime": "./shuvi-type-extensions-runtime.d.ts"
   },

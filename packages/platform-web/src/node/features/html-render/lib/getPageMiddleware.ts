@@ -4,8 +4,8 @@ import {
   IRequestHandlerWithNext,
   IServerPluginContext
 } from '@shuvi/service';
-import { sendHTML } from '@shuvi/service/lib/server/utils';
-import { renderToHTML } from './renderToHTML';
+import { sendHTML } from '@shuvi/service/server/utils';
+import { renderToHTML } from './renderToHTML.js';
 import { Response, isRedirect, isText } from '@shuvi/platform-shared/shared';
 
 function createPageHandler(serverPluginContext: IServerPluginContext) {

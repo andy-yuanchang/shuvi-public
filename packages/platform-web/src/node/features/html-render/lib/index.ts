@@ -1,4 +1,4 @@
-export { getPageMiddleware } from './getPageMiddleware';
-export { renderToHTML } from './renderToHTML';
-export * from './renderer';
-export * from './pageLoader';
+export { getPageMiddleware } from './getPageMiddleware.js';
+export { renderToHTML } from './renderToHTML.js';
+export * from './renderer/index.js';
+export * from './pageLoader.js';

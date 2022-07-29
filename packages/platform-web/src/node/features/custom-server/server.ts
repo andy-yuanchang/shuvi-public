@@ -1,5 +1,6 @@
 import { createServerPlugin } from '@shuvi/service';
-import { server } from '@shuvi/service/lib/resources';
+import resources from '@shuvi/service/resources';
+const { server } = resources;
 
 export default createServerPlugin({
   getPageData: (appContext, context) => {

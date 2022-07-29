@@ -1,5 +1,5 @@
 import { IAppData, Response } from '@shuvi/platform-shared/shared';
-import { htmlEscapeJsonString } from '@shuvi/utils/lib/htmlescape';
+import { htmlEscapeJsonString } from '@shuvi/utils/lib/htmlescape.js';
 import {
   BUILD_CLIENT_RUNTIME_MAIN,
   BUILD_CLIENT_RUNTIME_POLYFILL,
@@ -10,12 +10,16 @@ import {
   DEV_STYLE_ANCHOR_ID,
   DEV_STYLE_HIDE_FOUC,
   CLIENT_APPDATA_ID
-} from '@shuvi/shared/lib/constants';
-import { clientManifest } from '@shuvi/service/lib/resources';
-import generateFilesByRoutId from '../generateFilesByRoutId';
-import { tag } from './htmlTag';
-import { IHtmlDocument, IHtmlTag, IApplication } from './types';
-import { IRendererConstructorOptions, IRenderDocumentOptions } from './types';
+} from '@shuvi/shared/lib/constants.js';
+import generateFilesByRoutId from '../generateFilesByRoutId.js';
+import { tag } from './htmlTag.js';
+import { IHtmlDocument, IHtmlTag, IApplication } from './types.js';
+import {
+  IRendererConstructorOptions,
+  IRenderDocumentOptions
+} from './types.js';
+import resources from '@shuvi/service/resources';
+const { clientManifest } = resources;
 
 export type AppData = Omit<IAppData, 'filesByRoutId' | 'publicPath'>;
 

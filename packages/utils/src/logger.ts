@@ -1,4 +1,4 @@
-import createDebug, { Debugger } from "debug";
+import createDebug, { Debugger } from 'debug';
 
 export interface Logger {
   debug(...args: any[]): void;
@@ -19,18 +19,18 @@ class LoggerImpl implements Logger {
   }
 
   info(...args: any[]): void {
-    console.log("INFO:", ...args);
+    console.log('INFO:', ...args);
   }
 
   warn(...args: any[]): void {
-    console.warn("WARN:", ...args);
+    console.warn('WARN:', ...args);
   }
 
   error(...args: any[]): void {
-    console.error("ERROR:", ...args);
+    console.error('ERROR:', ...args);
   }
 }
 
-export default function logger(namespace: string): Logger {
+export function logger(namespace: string): Logger {
   return new LoggerImpl(namespace);
 }

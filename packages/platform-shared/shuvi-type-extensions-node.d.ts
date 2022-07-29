@@ -1,5 +1,5 @@
-import { IRuntimeConfig } from './src/shared';
-import { extendedHooks } from './src/node/platform/plugins/main/hooks';
+import { IRuntimeConfig } from './src/shared/index.js';
+import { extendedHooks } from './src/node/platform/plugins/main/hooks.js';
 
 export {};
 

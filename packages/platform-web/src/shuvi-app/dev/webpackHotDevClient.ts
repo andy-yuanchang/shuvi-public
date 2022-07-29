@@ -1,8 +1,8 @@
-import connect from '@shuvi/toolpack/lib/utils/hotDevClient';
+import { connect } from '@shuvi/toolpack/lib/utils/hotDevClient';
 import {
   DEV_HOT_MIDDLEWARE_PATH,
   DEV_HOT_LAUNCH_EDITOR_ENDPOINT
-} from '@shuvi/shared/lib/constants';
+} from '@shuvi/shared/lib/constants.js';
 
 interface Event {
   action: string;

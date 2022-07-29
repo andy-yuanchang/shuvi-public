@@ -1,4 +1,4 @@
-import { IHtmlTag } from '../types';
+import { IHtmlTag } from '../types.js';
 
 export type SideEffectProps = {
   reduceComponentsToState: <T>(

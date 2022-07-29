@@ -1,10 +1,11 @@
 import { IData, isResponse } from '@shuvi/platform-shared/shared';
 import { getPublicRuntimeConfig } from '@shuvi/platform-shared/shared/shuvi-singleton-runtimeConfig';
-import { IDENTITY_RUNTIME_PUBLICPATH } from '@shuvi/shared/lib/constants';
-import { clientManifest, server } from '@shuvi/service/lib/resources';
-import { BaseRenderer, AppData } from './base';
-import { tag } from './htmlTag';
-import { IHtmlDocument, IRenderDocumentOptions } from './types';
+import { BaseRenderer, AppData } from './base.js';
+import { tag } from './htmlTag.js';
+import { IHtmlDocument, IRenderDocumentOptions } from './types.js';
+import { IDENTITY_RUNTIME_PUBLICPATH } from '@shuvi/shared/lib/constants.js';
+import resources from '@shuvi/service/resources';
+const { clientManifest, server } = resources;
 
 export class SsrRenderer extends BaseRenderer {
   async renderDocument({ app, req }: IRenderDocumentOptions) {

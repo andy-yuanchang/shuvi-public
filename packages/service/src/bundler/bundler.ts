@@ -1,10 +1,11 @@
 import { WebpackChain, DynamicDll } from '@shuvi/toolpack/lib/webpack';
-import ForkTsCheckerWebpackPlugin, {
+import {
+  ForkTsCheckerWebpackPlugin,
   Issue,
   createCodeFrameFormatter
 } from '@shuvi/toolpack/lib/utils/forkTsCheckerWebpackPlugin';
 import formatWebpackMessages from '@shuvi/toolpack/lib/utils/formatWebpackMessages';
-import Logger from '@shuvi/utils/lib/logger';
+import { logger as Logger } from '@shuvi/utils/lib/logger';
 import { inspect } from 'util';
 import webpack, {
   MultiCompiler as WebapckMultiCompiler,

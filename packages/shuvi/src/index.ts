@@ -1,4 +1,4 @@
-import '@shuvi/platform-web/shuvi-type-extensions-node';
+import('@shuvi/platform-web/shuvi-type-extensions-node');
 
 export { ShuviMode, ShuviPhase } from './types';
 export { ShuviConfig, loadConfig, defineConfig } from './config';

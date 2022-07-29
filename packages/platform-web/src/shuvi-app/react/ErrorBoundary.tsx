@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { PropsWithChildren } from 'react';
-import { SHUVI_ERROR } from '@shuvi/shared/lib/constants';
-import ErrorPage from './ErrorPage';
+import { SHUVI_ERROR } from '@shuvi/shared/lib/constants.js';
+import ErrorPage from './ErrorPage.jsx';
 
 type ErrorBoundaryState = { error: Error | null };
 type ErrorInfo = { componentStack?: string | null };

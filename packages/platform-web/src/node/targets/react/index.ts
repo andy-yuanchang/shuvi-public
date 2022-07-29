@@ -1,7 +1,7 @@
 import { createPlugin } from '@shuvi/service';
-import bundlerPlugin from './bundler';
-import { RedoxReactPlugin } from './redox-react';
-import { resolvePkgFile, resolveDep } from '../../paths';
+import bundlerPlugin from './bundler/index.js';
+import { RedoxReactPlugin } from './redox-react/index.js';
+import { resolvePkgFile, resolveDep } from '../../paths.js';
 
 const webReactMainPlugin = createPlugin({
   addRuntimeService: () => [

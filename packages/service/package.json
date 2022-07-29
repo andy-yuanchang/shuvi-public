@@ -9,16 +9,61 @@
   "author": "liximomo",
   "license": "MIT",
   "sideEffects": false,
-  "main": "lib/index.js",
-  "module": "esm/index.js",
-  "types": "lib/index.d.ts",
   "files": [
     "lib",
-    "types"
+    "esm"
   ],
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./project": {
+      "default": "./lib/project/index.js"
+    },
+    "./project/file-utils": {
+      "default": "./lib/project/file-utils/index.js"
+    },
+    "./project/*": {
+      "default": "./lib/project/*.js"
+    },
+    "./core": {
+      "default": "./lib/core/index.js"
+    },
+    "./core/config": {
+      "default": "./lib/core/config/index.js"
+    },
+    "./core/*": {
+      "default": "./lib/core/*.js"
+    },
+    "./bundler": {
+      "default": "./lib/bundler/index.js"
+    },
+    "./bundler/config": {
+      "default": "./lib/bundler/config.js"
+    },
+    "./bundler/bundler": {
+      "default": "./lib/bundler/bundler.js"
+    },
+    "./bundler/*": {
+      "default:": "./lib/bundler/*.js"
+    },
+    "./server": {
+      "default": "./lib/server/index.js"
+    },
+    "./server/middlewares/dev": {
+      "default": "./lib/server/middlewares/dev/index.js"
+    },
+    "./server/*": {
+      "default": "./lib/server/*.js"
+    },
+    "./resources": {
+      "default": "./lib/resources.js"
+    },
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "dev": "tsc -p tsconfig.build.json -m commonjs -w",
-    "prebuild": "rimraf lib",
+    "prebuild": "rimraf esm",
     "build": "tsc -p tsconfig.build.json -m commonjs"
   },
   "engines": {

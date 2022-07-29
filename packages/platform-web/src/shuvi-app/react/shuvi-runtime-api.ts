@@ -1,7 +1,7 @@
-export { default as Head } from './head/head';
-export { default as dynamic } from './dynamic';
-export { useLoaderData } from './useLoaderData';
-export { Link } from './Link';
+export { default as Head } from './head/head.jsx';
+export { default as dynamic } from './dynamic.jsx';
+export { useLoaderData } from './useLoaderData.js';
+export { Link } from './Link.jsx';
 export {
   useParams,
   useRouter,

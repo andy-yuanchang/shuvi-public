@@ -1,7 +1,7 @@
 import { readFile, pathExists } from 'fs-extra';
 import os from 'os';
 import path from 'path';
-import chalk from '@shuvi/utils/lib/chalk';
+import { chalk } from '@shuvi/utils/lib/chalk';
 import { resolve } from '@shuvi/utils/lib/resolve';
 import { recursiveReadDir } from '@shuvi/utils/lib/recursiveReaddir';
 import { TsConfig, TypeScriptModule } from './types';

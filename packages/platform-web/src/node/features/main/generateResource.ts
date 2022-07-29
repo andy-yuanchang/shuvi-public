@@ -1,5 +1,5 @@
 import * as path from 'path';
-import * as fse from 'fs-extra';
+import fse from 'fs-extra';
 import {
   BUILD_DEFAULT_DIR,
   BUILD_SERVER_DIR,
@@ -8,7 +8,8 @@ import {
   BUILD_SERVER_FILE_SERVER,
   IPluginContext
 } from '@shuvi/service';
-import { urlToRequest } from '@shuvi/service/lib/project/file-utils';
+import { urlToRequest } from '@shuvi/service/project/file-utils';
+import { require } from '../../paths.js';
 
 const generateResources = (context: IPluginContext) => {
   const { resolveUserFile } = context;

@@ -1,10 +1,11 @@
 {
   "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "esModuleInterop": true
-  },
   "include": [
     "src",
+    "shuvi-type-extensions-node.d.ts",
     "shuvi-type-extensions-runtime.d.ts"
-  ]
+  ],
+  "compilerOptions": {
+    "module": "esnext"
+  }
 }

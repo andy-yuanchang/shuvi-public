@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { renderToString } from 'react-dom/server';
 import { getLoaderManager, redirect } from '@shuvi/platform-shared/shared';
-import { SHUVI_ERROR } from '@shuvi/shared/lib/constants';
+import { SHUVI_ERROR } from '@shuvi/shared/lib/constants.js';
 import { Router } from '@shuvi/router-react';
-import { IHtmlTag } from '../../../shared';
-import Loadable, { LoadableContext } from '../loadable';
-import AppContainer from '../AppContainer';
-import { IReactServerView, IReactAppData } from '../types';
-import { Head } from '../head';
+import { IHtmlTag } from '../../../shared/index.js';
+import Loadable, { LoadableContext } from '../loadable/index.js';
+import AppContainer from '../AppContainer.jsx';
+import { IReactServerView, IReactAppData } from '../types.js';
+import { Head } from '../head/index.js';
 
 export class ReactServerView implements IReactServerView {
   renderApp: IReactServerView['renderApp'] = async ({

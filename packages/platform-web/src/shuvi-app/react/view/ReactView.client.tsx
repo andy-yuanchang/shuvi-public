@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { SHUVI_ERROR } from '@shuvi/shared/lib/constants';
+import { SHUVI_ERROR } from '@shuvi/shared/lib/constants.js';
 import { Router } from '@shuvi/router-react';
-import AppContainer from '../AppContainer';
-import { HeadManager, HeadManagerContext } from '../head';
-import Loadable from '../loadable';
-import { IReactClientView } from '../types';
-import { renderAction } from './render-action';
+import AppContainer from '../AppContainer.jsx';
+import { HeadManager, HeadManagerContext } from '../head/index.js';
+import Loadable from '../loadable/index.js';
+import { IReactClientView } from '../types.js';
+import { renderAction } from './render-action.js';
 
 const headManager = new HeadManager();
 

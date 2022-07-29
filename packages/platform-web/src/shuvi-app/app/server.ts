@@ -12,7 +12,7 @@ import application, {
   Application
 } from '@shuvi/platform-shared/shuvi-app/application';
 import { createRouter, createMemoryHistory, IRouter } from '@shuvi/router';
-import { CreateAppServer } from '../../shared';
+import { CreateAppServer } from '../../shared/index.js';
 
 export const createApp: CreateAppServer = options => {
   const { req, ssr } = options;

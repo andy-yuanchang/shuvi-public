@@ -2,9 +2,9 @@
 // License: https://github.com/zeit/next.js/blob/977bf8d9ebd2845241b8689317f36e4e487f39d0/license.md
 
 import * as React from 'react';
-import withSideEffect from './side-effect';
-import { HeadManagerContext } from './head-manager-context';
-import { HeadElement, HeadState, HeadItem } from './types';
+import withSideEffect from './side-effect.jsx';
+import { HeadManagerContext } from './head-manager-context.js';
+import { HeadElement, HeadState, HeadItem } from './types.js';
 
 export const SHUVI_HEAD_ATTRIBUTE = 'data-shuvi-head';
 

@@ -11,21 +11,21 @@
   "sideEffects": [
     "**/shuvi-app/entry/client/**"
   ],
+  "type": "module",
   "files": [
-    "lib",
     "esm",
     "shuvi-type-extensions-node.d.ts",
     "shuvi-type-extensions-runtime.d.ts"
   ],
   "exports": {
     ".": {
-      "default": "./lib/node/index.js"
+      "default": "./esm/node/index.js"
     },
     "./node": {
-      "default": "./lib/node/index.js"
+      "default": "./esm/node/index.js"
     },
     "./node/*": {
-      "default": "./lib/node/*.js"
+      "default": "./esm/node/*.js"
     },
     "./shared": {
       "default": "./esm/shared/index.js"
@@ -44,18 +44,14 @@
     },
     "./shuvi-type-extensions-node": {
       "types": "./shuvi-type-extensions-node.d.js",
-      "default": "./shuvi-type-extensions-node.js"
+      "default": "./shuvi-type-extensions-node.mjs"
     },
     "./shuvi-type-extensions-runtime": "./shuvi-type-extensions-runtime.d.ts"
   },
   "scripts": {
-    "dev": "run-p watch:*",
-    "watch:esm": "tsc -p tsconfig.build.browser.json -w",
-    "watch:cjs": "tsc -p tsconfig.build.node.json -w",
-    "prebuild": "rimraf lib esm types",
-    "build": "run-p build:*",
-    "build:esm": "tsc -p tsconfig.build.browser.json",
-    "build:cjs": "tsc -p tsconfig.build.node.json"
+    "dev": "tsc -p tsconfig.build.json -w",
+    "prebuild": "rimraf esm",
+    "build": "tsc -p tsconfig.build.json"
   },
   "engines": {
     "node": ">= 12.0.0"

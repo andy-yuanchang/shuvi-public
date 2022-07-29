@@ -1,4 +1,4 @@
-import { IManifest } from '@shuvi/toolpack/lib/webpack/types';
+import { IManifest } from '@shuvi/toolpack/lib/webpack/types.js';
 import {
   Response,
   IApplication,

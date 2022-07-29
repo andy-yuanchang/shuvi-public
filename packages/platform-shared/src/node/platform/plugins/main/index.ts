@@ -11,7 +11,7 @@ const core = createPlugin({
       // must be export separately, we need the module path to always be the
       // same as what we've defined in
       // "packages/toolpack/src/webpack/config/parts/external.ts"
-      source: resolvePkgFile('lib/shared/shuvi-singleton-runtimeConfig'),
+      source: resolvePkgFile('esm/shared/shuvi-singleton-runtimeConfig'),
       exported: '{ getRuntimeConfig }'
     },
     {
@@ -28,5 +28,5 @@ const core = createPlugin({
 
 export default {
   core,
-  types: resolvePkgFile('lib/node/platform/plugins/main/shuvi-app.d.ts')
+  types: resolvePkgFile('esm/node/platform/plugins/main/shuvi-app.d.ts')
 };

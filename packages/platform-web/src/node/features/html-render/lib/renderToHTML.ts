@@ -1,8 +1,9 @@
 import { IRequest, IServerPluginContext } from '@shuvi/service';
-import { server } from '@shuvi/service/lib/resources';
 import { Response, isResponse, text } from '@shuvi/platform-shared/shared';
-import { Renderer, IHtmlDocument } from './renderer';
-import { tag } from './renderer/htmlTag';
+import { Renderer, IHtmlDocument } from './renderer/index.js';
+import { tag } from './renderer/htmlTag.js';
+import resources from '@shuvi/service/resources';
+const { server } = resources;
 
 function addEssentialTagsIfMissing(document: IHtmlDocument): IHtmlDocument {
   let hasMetaCharset = false;
